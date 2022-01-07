@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MRI Classifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Juan Manuel Cornejo</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/juanmanuelcornejociruelo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Jcornejo85" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Tumor Classifier<br />
+									</h1>
+									<div class="image main"><img src="images/Portada MRI.png" alt="" /></div>
+									<p>Personal Machine Learning project, based on the BRAIN TUMOR MRI Kaggle Dataset</p>
+									<p>Resultado con Inception V3 de un 84% Accuracy y un 100% en Recall en la clasificación de tumores en MRI</p>
+									<p><sub>You can see a summary below or use the buttons to go to Github or project results.</sub></p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jcornejo85/Brain_Tumor_Classifier_ML_Proyect" class="button large">View Project</a></li>
+										<li><a href="https://docs.google.com/presentation/d/1cEFnk1HfLjgsLq7U0OfUIYD8Oau2X9gsXqcYX3JLoCY/edit?usp=sharing" class="button large">View Results</a></li>
+	
+									</ul>
+								</header>
+								<h3>The project was done with Python using Jupiter Notebook</h3>
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h4>The most relevant tools used were:</h4>
+											<ul>
+												<li>Panda and Numpy.</li>
+												<li>For visualisation Plotly and Seaborn.</li>
+												<li>For Machine Learning training, Scikit-Learn, TensorFlow and Keras.</li>
+											</ul>
+										</div>
+									</div>
+									<h2>Project summary</h2>
+									<dl>
+										<dt>Image pre-processing</dt>
+										<dd>
+											<p><span class="image left"><img src="images/Tratamiento MRI.png" alt="" /></span>Each image in the Dataset was searched for the maximum contour, to find the extreme points and crop it to eliminate possible noise, such as MRi dates, hospital names etc... There is a notebook dedicated to this procedure if you wish to see the process.</p>
+											
+											
+										</dd>
+										<dt>Dataset distribution</dt>
+										<dd>
+											<p><span class="image right"><img src="images/Análisis Dataset MRI.png" alt="" /></span>As you can see we had an unbalanced dataset, and not very numerous, which led us to perform two procedures to verify results, one with ImageDataGenerator and others without, given the special nature of an MRI, the best results were without ImageDataGenerator.</p>
+										</dd>
+										<dt>Winning model</dt>
+										<dd>
+											<span class="image fit"><img src="images/Inception MRI.png" alt="" /></span>
+											<p><span class="image left"><img src="images/Entrenamiento MRI.png" alt="" /></span>The final result was 0.8461 Model Accuracy, and 100% recall.</p>
+											<p><span class="image right"><img src="images/ConfMatrix MRI.png" alt="" /></span>As can be seen it does not fail in any MRI with tumour saying that it is healthy, if it has some failures indicating as Tumours healthy MRI. 
+												Talking about brain tumours, it seems of utmost importance that no tumours are left undetected even if there are some false positives.
+												
+												If you look at the total results of the project and the comparison of models you will see that the failures of Inception V3 look like MRi with noise or mislabelled, because to the human eye they also look like tumours even though they are labelled as healthy.
+												
+												</p>
+											
+										</dd>
+									</dl>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jcornejo85/Brain_Tumor_Classifier_ML_Proyect" class="button large">View Project</a></li>
+										<li><a href="https://docs.google.com/presentation/d/1cEFnk1HfLjgsLq7U0OfUIYD8Oau2X9gsXqcYX3JLoCY/edit?usp=sharing" class="button large">View Results</a></li>
+	
+									</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section class="split contact">
+						<section class="alt">
+							<h3>Location</h3>
+							<p>Madrid, Spain<br />
+							</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(+34) 600325300</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">juanm.cornejoc@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/juanmanuelcornejociruelo/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/Jcornejo85" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; JuanManuelCornejo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

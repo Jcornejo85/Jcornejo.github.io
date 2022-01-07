@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EDA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Juan Manuel Cornejo</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/juanmanuelcornejociruelo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Jcornejo85" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>THE ECONOMIC POTENTIAL OF TELEWORK IN SPAIN<br />
+									</h1>
+									<div class="image main"><img src="images/IMG2.jpeg" alt="" /></div>
+									<p>Personal project on the economic potential of telework.</p>
+									<p>The Exploratory Data Analysis is composed of data binding and analysis which you can see below or go to the Github repository where you can see notebook and even run an APP on streamlit where you can appreciate the whole project.</p>
+									<p><sub>You can see a summary below or use the buttons to go to Github.</sub></p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jcornejo85/EDA_El_Potencial_Economico_Teletrabajo" class="button large">View Project</a></li>
+										
+	
+									</ul>
+								</header>
+								<h3>The project was done with Python, using Jupiter Notebook and developing an app in Streamlit</h3>
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h4>The most relevant tools used were:</h4>
+											<ul>
+												<li>Panda and Numpy.</li>
+												<li>For visualisation Matplotlib, Plotly and Seaborn.</li>
+												<li>Project visualisation app using Streamlit.</li>
+											</ul>
+										</div>
+									</div>
+									<h2>Project summary</h2>
+									<dl>
+										<dt>For use in local streamlit. The versions used are:</dt>
+										<ul>
+											<li>Streamlit==0.84.1</li>
+											<li>Pandas==1.2.4</li>
+											<li>Numpy==1.19.5</li>
+											<li>Matplotlib==3.3.4</li>
+											<li>Plotly==5.1.0</li>
+											<li>Seaborn==0.11.1</li>
+										</ul>
+										<p>Once you have the correct version, clone repository, and from SRC, execute: streamlit run EDA_Teletrabajo_main.py</p>
+
+										<dt>The initial idea</dt>
+										<p>The initial idea arose from a paper by the Bank of Spain on telework in Spain precovid and the potential future of telework, which led me to the following approach for this EDA.</p>
+										<p>Verify the economic potential and the possibility of choosing your place of residence on the basis of personal and non-employment preferences, which will lead us to analyse the following points</p>
+										<ul>
+											<li>Generic analysis of the labour market situation in terms of unemployment rate and social security affiliation.</li>
+											<li>Wage performance in the different provinces, being able to assess the change in purchasing power depending on which province we are in.</li>
+											<li>Comparison of property market prices in order to assess where to live.</li>
+										<dd>
+											<p><span class="image left"><img src="images/Matrix.png" alt="" /></span>To carry out this project I obtained data from two published papers, one from the Bank of Spain and the other on economic power in Spain, given that it is not a widely used measure in our country. I did web scraping in idealista to obtain the data of prices per m2 per province both for buying and selling, I downloaded data from INE about unemployment rate, Spanish social security affiliates, and deeded sale prices to obtain real sale data. (In the graph on the left we can see the Pearson correlation coefficient matrix, with some of these values).s</p>
+											
+											
+										</dd>
+										<dt>Generic analysis of the labour market</dt>
+										<dd>
+											<p><span class="image fit"><img src="images/Paro_provincias.png" alt="" /></span>One of the premises verified was that the provinces with the lowest unemployment rate do not necessarily imply that they are the dynamic ones for absorbing workers, as in many cases their social security affiliations are low and may imply that the labour market is already full.</p>
+											<p><span class="image fit"><img src="images/Afiliados_comunidades.png" alt="" /></span></p>										
+										</dd>
+										<dt>Wage performance</dt>
+										<dd>
+											<p><b>Salary per community</b></p>
+											<p><span class="image fit"><img src="images/SalarioM_comunidadpng" alt="" /></span>Although it is not visible in the graphs shown, if we consult the data used by the INE to calculate salaries, we can see that the difference in the median salary per community is very similar, we are talking about a range of less than €50 gross.</p>
+											<p>However, the median wage does have large differences, which implies that the minimum and maximum wages are quite different per region.</p>
+											<p><b>Cost of living</b></p>
+											<p><span class="image fit"><img src="images/Coste_vida.png" alt="" /></span>Cost of living has been obtained based on wage and house price metrics as indicated in the paper you can see in the Github links. As you can see communities like Madrid, have the cost of living above the Spanish average, considered as a country in 100.</p>									
+											<p><b>Purchasing power.</b></p>
+											<p><span class="image fit"><img src="images/Poder_adquisitivo.png" alt="" /></span>If we analyse wages based on the cost of living, we see that the purchasing power changes radically for some communities, communities such as Madrid, become the penultimate in purchasing power based on the average cost of living in Spain.</p>
+											<p>To calculate the purchasing power, we have calculated a modifier based on the cost of living in Spain and multiplied it by the average salary.</p>
+										</dd>
+										<dt>Comparison of property market prices</dt>
+										<dd>
+											<p><span class="image fit"><img src="images/Precio_m2_compra.png" alt="" /></span>As we can see from the correlation matrix, the purchase price and rental price have a direct relationships</p>
+											<p><span class="image fit"><img src="images/Precio_m2_alquiler.png" alt="" /></span></p>
+										</dl>
+										<p><i>In the final project, if you use the developed streamlit app you can find more details of the EDA, along with some tools developed such as a calculator to see how much the purchasing power changes if you work in one province and live in another. Or a mortgage calculator updated with data from JUN 21, where with a few parameters it tells you the possible viability of the mortgage, amortization table, instalment ...</i></p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jcornejo85/EDA_El_Potencial_Economico_Teletrabajo" class="button large">View Project at Github</a></li>
+	
+									</ul>
+							</section>
+s
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section class="split contact">
+						<section class="alt">
+							<h3>Location</h3>
+							<p>Madrid, Spain<br />
+							</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(+34) 600325300</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">juanm.cornejoc@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/juanmanuelcornejociruelo/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/Jcornejo85" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; JuanManuelCornejo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
