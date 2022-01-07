@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>About me</title>
+		<title>Gluby</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,7 +26,6 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
-							<li class="active"><a href="generic.html">About Me</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/juanmanuelcornejociruelo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -41,15 +40,16 @@
 							<section class="post">
 								<header class="major">
 									
-									<h1>Tumor Classifier<br />
+									<h1>Gluby<br />
 									</h1>
-									<div class="image main"><img src="images/Portada MRI.png" alt="" /></div>
-									<p></p>
-									<p></p>
-									<p><sub>You can see a summary below or use the buttons to go to Github.</sub></p>
+									<div class="image main"><img src="images/IMG3.jpeg" alt="" /></div>
+									<ul>
+										<li>You can see the report written by the UIX colleague on the case study of the app in the link below.</li>
+										<li>You can watch the defence of the project before the professional tribunal in the link below on Youtube. It is in Spanish, and by academic guidelines only UIX and Front colleagues present the project.</li>
+									</ul>
 									<ul class="actions special">
-										<li><a href="https://github.com/Jcornejo85/Brain_Tumor_Classifier_ML_Proyect" class="button large">View Project</a></li>
-										<li><a href="https://docs.google.com/presentation/d/1cEFnk1HfLjgsLq7U0OfUIYD8Oau2X9gsXqcYX3JLoCY/edit?usp=sharing" class="button large">View Results</a></li>
+										<li><a href="https://fiorella-d.medium.com/gluby-caso-de-estudio-ux-ui-9020829ded19" class="button large">See report</a></li>
+										<li><a href="https://www.youtube.com/watch?v=gV16IaUvUTk&t=6518s" class="button large">View presentation</a></li>
 	
 									</ul>
 								</header>
@@ -60,32 +60,19 @@
 											<h4>The most relevant tools used were:</h4>
 											<ul>
 												<li>Panda and Numpy.</li>
-												<li>For visualisation Plotly and Seaborn.</li>
 												<li>For Machine Learning training, Scikit-Learn, TensorFlow and Keras.</li>
+												<li>AWS has been used for the implementation</li>
 											</ul>
 										</div>
 									</div>
 									<h2>Project summary</h2>
-									<dl>
-										<dt>Image pre-processing</dt>
-										<dd>
-											<p><span class="image left"><img src="images/Tratamiento MRI.png" alt="" /></span></p>
-											
-											
-										</dd>
-										<dt>Dataset distribution</dt>
-										<dd>
-											<p><span class="image right"><img src="images/Análisis Dataset MRI.png" alt="" /></span></p>
-										</dd>
-										<dt>Winning model</dt>
-										<dd>
-											<span class="image fit"><img src="images/Inception MRI.png" alt="" /></span>
-											<p><span class="image left"><img src="images/Entrenamiento MRI.png" alt="" /></span></p>
-											<p><span class="image right"><img src="images/ConfMatrix MRI.png" alt="" /></span></p>											
-										</dd>
-									</dl>
-									<ul class="actions special">
-										<li><a href="https://github.com/Jcornejo85/Brain_Tumor_Classifier_ML_Proyect" class="button large">View Project</a></li>
+									<p>As manager of the data science team, our work was divided into several phases.</p>
+									<p>We worked with an agile methodology, specifically with Kanban, and since it is a project with a time limit of 2 weeks, almost 3 weeks, we did micro sprint, as close as we could to the scrum model.</p>
+									<p>The biggest challenge was largely the time available. Given that the objective of the app, if you see the presentation or the article it is more explained, but in summary, the goal of my team was to implement a machine learning model, in which, by giving a photo of a freshwater fish in a fish tank, our model would recognise which fish it is.</p>
+									<p>As you can well imagine, the volume of images to recognise which fish it is, is such that we would need to spend all our time just collecting them. Since this is not possible, as the objective is to get an MVP, we reduced the number of fishes to 15.</p>
+									<p>After gathering more than 3000 images, we trained the machine learning models, when we did not obtain the desired results, we decided to make a pre-treatment of images, which eliminated the background of the images leaving only the fish, this treatment was not effective in all fish, so we lowered the MVP to selection among 9 fish.</p>
+									<p>The accuracy of the model improved enough to pursue implementation on AWS. In parallel, another part of the team generated a relational database.</p>
+									<p>Once the model recognised which fish it was, the app had multiple functions, such as indicating in which environment it could be bred, which other fish it could live with, types of diseases and their solution... The solution from Data Science was to create a relational database that would provide the user with this information.</p>
 	
 									</ul>
 							</section>
